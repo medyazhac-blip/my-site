@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHAC | 801 #Executive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #ffffff; }
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #030303;
+            color: #a3a3a3;
+            user-select: none;
+            overflow-x: hidden;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .op-card { background: rgba(10, 10, 10, 0.6); border: 1px solid rgba(255, 255, 255, 0.03); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .op-card:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-5px); }
+        .scanline { width: 100%; height: 100px; z-index: 10; background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0) 100%); opacity: 0.1; position: absolute; bottom: 100%; animation: scan 8s linear infinite; }
+        @keyframes scan { from { bottom: 100%; } to { bottom: -100%; } }
+        .tg-btn { background: white; color: black; transition: all 0.4s; }
+        .tg-btn:hover { background: transparent; color: white; box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); border: 1px solid white; }
+    </style>
+</head>
+<body class="selection:bg-white selection:text-black" oncontextmenu="return false;">
+
+    <div class="fixed inset-0 pointer-events-none opacity-20">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    </div>
+
+    <div class="fixed left-6 bottom-12 hidden lg:block z-50">
+        <div class="flex flex-col gap-8 items-center">
+            <span class="mono text-[10px] uppercase tracking-[0.5em] rotate-180" style="writing-mode: vertical-rl;">STATUS: ONLINE</span>
+            <div class="w-[1px] h-20 bg-white/20"></div>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 p-8 flex justify-between items-center backdrop-blur-sm border-b border-white/5">
+        <div class="mono text-white font-extrabold text-xl tracking-[0.2em]">ZHAC<span class="animate-pulse">_</span></div>
+        <div class="hidden md:flex space-x-10 text-[10px] uppercase tracking-[0.4em] font-medium">
+            <a href="#operasyon" class="hover:text-white transition">Operasyon</a>
+            <a href="#hizmet" class="hover:text-white transition">Teknik</a>
+            <a href="#iletisim" class="hover:text-white transition">Terminal</a>
+        </div>
+        <div class="text-[10px] mono border border-white/10 px-4 py-2 text-white/40 uppercase">Rank: Assistant Leader</div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center px-6 md:px-24 relative overflow-hidden">
+        <div class="scanline"></div>
+        <div class="max-w-4xl">
+            <span class="mono text-[11px] uppercase tracking-[0.6em] text-white/30 mb-6 block">801 #Executive Power</span>
+            <h1 class="text-7xl md:text-[130px] font-black text-white leading-none tracking-tighter mb-8">
+                GÖLGE <br> <span class="text-transparent" style="-webkit-text-stroke: 1px rgba(255,255,255,0.4)">YÖNETİM.</span>
+            </h1>
+            <p class="max-w-xl text-lg md:text-xl text-gray-500 font-light leading-relaxed mb-12">
+                Sahadaki göz, operasyondaki el. Liderin vizyonunu teknik kusursuzlukla gerçeğe dönüştürüyorum.
+            </p>
+            <div class="flex items-center gap-8">
+                <a href="#iletisim" class="tg-btn px-10 py-4 rounded-sm text-xs uppercase tracking-widest font-bold">Bağlantı Kur</a>
+                <span class="mono text-[10px] text-gray-600 animate-pulse">Ready to execute.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="operasyon" class="py-32 px-6 md:px-24 bg-[#050505]">
+        <div class="grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl font-bold text-white mb-8 mono tracking-tighter italic">02 / Executive</h2>
+                <p class="text-gray-400 leading-relaxed mb-10 text-lg">
+                    Lider Lonxz'ın emrindeki en yüksek yetki. 801 ekibinin operasyonel akışını, saha disiplinini ve teknik altyapısını denetleyen ana mekanizma.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-xs tracking-widest uppercase">
+                        <div class="w-2 h-2 bg-white rounded-full"></div> Saha Koordinasyonu
+                    </div>
+                    <div class="flex items-center gap-4 text-xs tracking-widest uppercase text-white/40">
+                        <div class="w-2 h-2 bg-white/20 rounded-full"></div> Teknik Onay Yetkisi
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="op-card p-8 flex flex-col justify-end">
+                    <span class="text-white text-3xl font-black mb-2">801</span>
+                    <span class="text-[9px] uppercase tracking-widest">Division</span>
+                </div>
+                <div class="op-card p-8 flex flex-col justify-end bg-white/[0.02]">
+                    <span class="text-white text-3xl font-black mb-2 italic">ZHAC</span>
+                    <span class="text-[9px] uppercase tracking-widest">Operator</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmet" class="py-32 px-6 md:px-24 border-y border-white/5">
+        <div class="mb-20 text-center">
+            <h2 class="text-5xl font-black text-white tracking-tighter uppercase">Saha Hizmetleri</h2>
+            <div class="w-20 h-[1px] bg-white/20 mx-auto mt-6"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="op-card p-10 group">
+                <div class="mono text-[10px] mb-6 text-white/20 uppercase tracking-widest">01 / Infrastructure</div>
+                <h4 class="text-white font-bold text-xl mb-4">Sistem Kurulumu</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Ekibin ihtiyacı olan tüm dijital altyapıyı en güvenli ve en gizli şekilde inşa ediyorum.</p>
+            </div>
+            <div class="op-card p-10 group bg-white/[0.01]">
+                <div class="mono text-[10px] mb-6 text-white/20 uppercase tracking-widest">02 / Surveillance</div>
+                <h4 class="text-white font-bold text-xl mb-4">Medya Denetimi</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Operasyonların medyaya yansıyan kısımlarını ve stratejik imaj yönetimini Zhac titizliğiyle yürütüyorum.</p>
+            </div>
+            <div class="op-card p-10 group">
+                <div class="mono text-[10px] mb-6 text-white/20 uppercase tracking-widest">03 / Support</div>
+                <h4 class="text-white font-bold text-xl mb-4">7/24 Teknik Destek</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">801 hizmetlerinden yararlananlar için kesintisiz teknik destek ve çözüm odaklı yaklaşım.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-40 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mono text-[10px] text-gray-600 mb-10 tracking-[1em] uppercase">Initialising Contact Protocol</div>
+            <h2 class="text-6xl md:text-9xl font-black text-white mb-16 tracking-tighter">TELEGRAM.</h2>
+            
+            <div class="op-card p-12 md:p-20 relative group">
+                <div class="absolute inset-0 bg-white/[0.01] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span class="mono text-[10px] block mb-10 text-white/30 tracking-widest uppercase">Direct Transmission Channel</span>
+                
+                <a href="https://t.me/kesmisim" target="_blank" class="text-3xl md:text-6xl text-white font-black hover:tracking-widest transition-all duration-700 block mb-10">
+                    T.ME/KESMISIM
+                </a>
+
+                <div class="flex justify-center gap-12 mt-16 pt-10 border-t border-white/5 mono text-[9px] uppercase tracking-widest text-gray-600">
+                    <div class="text-left">
+                        <span class="block text-white/40 mb-2 italic">Operator</span>
+                        ZHAC
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-white/40 mb-2 italic">Authority</span>
+                        801 ASSISTANT
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-white/40 mb-2 italic">Encryption</span>
+                        ACTIVE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center mono">
+        <div class="text-[10px] tracking-[0.5em] text-gray-800">
+            © 2026 ZHAC | OPERATIONAL ASSISTANT TO LONXZ | 801 #RONESANS
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) return false;
+        }
+        console.log("%cOPERATOR: ZHAC", "color:white; font-family:monospace; font-size:25px; font-weight:bold;");
+        console.log("%c801 Executive Line Secured.", "color:gray; font-family:monospace;");
+    </script>
+
+</body>
+</html>
